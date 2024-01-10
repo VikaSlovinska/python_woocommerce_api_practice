@@ -5,15 +5,15 @@ This repository contains Python scripts for practicing interactions with WooComm
 
 ## List of Scrips/Modules:
 
-1. **Create_users_on_website.py**: A script to create users on a website. This script has an added function to check environment variables.
+1. **create_users_on_website.py**: A script to create users on a website. This script has an added function to check environment variables.
    
-2. **List_of_customer_emails.py**: A script that lists customer emails. Changes have been made to eliminate lists of lists, and environment variables and logging have been added.
+2. **list_of_customer_emails.py**: A script that lists customer emails. Changes have been made to eliminate lists of lists, and environment variables and logging have been added.
    
-3. **List_of_products_and_prices.py**: This script creates a list of products and prices. The response body has been added to error messages.
+3. **list_of_products_and_prices.py**: This script creates a list of products and prices. The response body has been added to error messages.
    
-4. **Delete_products.py**: Work in progress script for deleting products.
+4. **delete_products.py**: Work in progress script for deleting products.
    
-5. **Jenkins_delete_products.py**: Script related to Jenkins development. Includes formatting changes.
+5. **jenkins_delete_products.py**: Script related to Jenkins development. Includes formatting changes.
    
 6. **create_products_on_website.py**: A script to create products on a website. Includes meaningful print statements.
    
