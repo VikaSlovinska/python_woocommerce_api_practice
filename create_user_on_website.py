@@ -27,8 +27,8 @@ logging.basicConfig(filename='create_user.log', level=logging.DEBUG,
                     format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 # WooCommerce API keys
-variable_key = "ck_1ffcec6023372bc9e82fb844e233ac00e32fe0f2"
-variable_secret = "cs_ba10a1f4ae4116788305140b2d4cb163b56c6341"
+variable_key = "site_key_variable"
+variable_secret = "site_secret_varibale"
 
 def check_env_variables():
     """
