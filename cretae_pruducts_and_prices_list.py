@@ -16,8 +16,8 @@ import os
 # WooCommerce API initialization
 wcapi = API(
      url="http://modamarket.local/",
-     consumer_key="ck_1ffcec6023372bc9e82fb844e233ac00e32fe0f2",
-     consumer_secret="cs_ba10a1f4ae4116788305140b2d4cb163b56c6341",
+     consumer_key="website_key",
+     consumer_secret="website_secret",
      version="wc/v3",
      timeout=60
 )
