@@ -16,8 +16,8 @@ from woocommerce import API
 logging.basicConfig(level=logging.INFO)
 
 # WooCommerce API keys for authentication
-woo_key = 'ck_1ffcec6023372bc9e82fb844e233ac00e32fe0f2'
-woo_secret = 'cs_ba10a1f4ae4116788305140b2d4cb163b56c6341'
+woo_key = 'website_key'
+woo_secret = 'website_secret'
 
 
 def check_environ_variables(variable_name):
