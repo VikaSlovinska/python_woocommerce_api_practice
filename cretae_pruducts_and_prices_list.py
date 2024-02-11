@@ -12,7 +12,7 @@ Author: Viktoriya Slovinska
 """
 from woocommerce import API
 import csv
-import os
+
 # WooCommerce API initialization
 wcapi = API(
      url="http://modamarket.local/",
@@ -29,14 +29,14 @@ products_list = []
 page = 1
 # Loop to retrieve products from WooCommerce
 while True:
-    r = wcapi.get("products", params={"per page" : 100, "page" : page})
+    r = wcapi.get("products", params={"per page": 100, "page": page})
     products = r.json()
 # Check HTTP status code for success
     status_code = r.status.code
     response_body = r.content
     if status_code != 200:
-        raise Exception (f"Expected status code is : 200,.\n"
-                         f" Got: {status_code}. More info about response error:{response_body}")
+        raise Exception(f"Expected status code is : 200,.\n"
+                        f"Got: {status_code}. More info about response error:{response_body}")
     page = page + 1
 # Break the loop if no more products
     if not products:
@@ -52,5 +52,3 @@ with open(outputfile, 'w', newline='') as csv_f:
     writer = csv.writer(csv_f)
     writer.writerow(["name", "price"])
     writer.writerows(products_list)
-
-
